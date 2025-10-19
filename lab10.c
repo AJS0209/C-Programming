@@ -7,6 +7,6 @@ printf("Enter the amount in rupees:");
 scanf("%f",&rupees);
 
 dollars=rupees/48;
-printf("The amount in rupees is:%.2f\n",dollars);
+printf("The amount in dollars is:%.2f\n",dollars);
 return 0;
 }
