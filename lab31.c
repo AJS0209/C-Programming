@@ -14,7 +14,7 @@ int main()
 
     if (a>b && a>c)
     {
-        printf("%d id greater than %d and %d",a,c,b);
+        printf("%d is greater than %d and %d",a,c,b);
     }
 
     else if (b>a && b>c)
@@ -29,3 +29,4 @@ int main()
 
 return 0;
 }
+
