@@ -1,14 +1,22 @@
 #include <stdio.h>
+
 int main()
 {
-    int i,x,p=0,n=0,z=0;
-    for(i=1;i<=200;i++)
+    int num, original, digit, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    original = num;
+
+    while (num > 0)
     {
-        scanf("%d",&x);
-        if(x>0) p++;
-        else if(x<0) n++;
-        else z++;
+        digit = num % 10;
+        sum = sum + digit * digit * digit;
+        num = num / 10;
     }
-    printf("+ve=%d\n-ve=%d\nzero=%d",p,n,z);
+    if (original == sum)
+        printf("%d is an Armstrong number.\n", original);
+    else
+        printf("%d is not an Armstrong number.\n", original);
+
     return 0;
 }

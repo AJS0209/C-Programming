@@ -1,16 +1,19 @@
 #include <stdio.h>
+
 int main()
 {
-    int i, b = 0, g = 0;
-    char c;
-    for (i = 1; i <= 50; i++)
+    int num, i = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    printf("The factors of %d are: ", num);
+
+    for (i = 1; i <= num; i++)
     {
-        scanf(" %c", &c);
-        if (c == 'b' || c == 'B')
-            b++;
-        else if (c == 'g' || c == 'G')
-            g++;
+        if (num % i == 0)
+        {
+            printf("%d ", i);
+        }
     }
-    printf("boys=%d\ngirls=%d", b, g);
     return 0;
 }
